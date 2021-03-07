@@ -9,6 +9,8 @@ import pandas as pd
 import  numpy as np
 from keras.utils import np_utils
 from sklearn import preprocessing
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 def readpoint(path,classnum,first_classnum,fs):
 
     feature_size = fs    #特征个数

@@ -13,6 +13,8 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation,Concatenate,Dropout
 from keras.constraints import maxnorm
 from keras.callbacks import ModelCheckpoint, TensorBoard
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from keras.utils import np_utils,plot_model
 import pandas as pd
 import os
